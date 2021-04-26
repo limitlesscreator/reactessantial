@@ -4,7 +4,7 @@ import {ClickCounterNew} from "./components/ClickCounter";
 import {ClickerF} from "./components/ClickerF";
 import {ClickCounterF} from "./components/CounterFuncionalComponent";
 import {TimerFunction} from "./components/TimerFunction";
-import {WithRef} from "./components/Ref";
+import {UseRef1, WithRef} from "./components/Ref";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <button onClick={ () => {setClicker(!isClicker)}}>Toggle clicker</button>
             <br/><br/>
             {isClicker && <ClickerF/>}
-            {/*<><WithRef/></>*/}
+            <TimerFunction/>
         </div>
     );
 }
