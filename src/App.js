@@ -8,6 +8,8 @@ import {UseRef1, WithRef} from "./components/Ref";
 import {State} from "./components/State";
 import {Context} from "./components/Context";
 import {Books} from "./components/Books";
+import {NewRef} from "./components/NewRef";
+import {RefHook} from "./components/NewRefHook";
 
 function App() {
 
@@ -21,10 +23,12 @@ function App() {
             {/*{isClicker && <ClickerF/>}*/}
             {/*<TimerFunction/>*/}
             <br/>
-            <State/>
-            <Context>
-                <Books/>
-            </Context>
+            {/*<State/>*/}
+            {/*<Context>*/}
+            {/*    <Books/>*/}
+            {/*</Context>*/}
+            {/*<NewRef/>*/}
+            <RefHook/>
         </div>
     );
 }
